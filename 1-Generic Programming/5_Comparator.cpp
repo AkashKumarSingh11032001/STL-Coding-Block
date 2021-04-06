@@ -32,6 +32,23 @@ public:
     }
 };
 
+// Template + Itreartor + Comparator
+template <class ForwardIterator, class T, class compare>
+ForwardIterator search(ForwardIterator start, ForwardIterator end, T key, compare cmp)
+{
+
+    while (start != end)
+    {
+        /* code */
+        if (cmp(*start,key))
+        {
+            return start;
+        }
+        start++;
+    }
+    return end;
+}
+
 int main()
 {
 
@@ -47,8 +64,17 @@ int main()
     Book bookToFind("c++", 110); // new edi book
 
     bookCompare cmp;
-    if (cmp(b1, bookToFind))
-    {
-        cout << "Same Book";
+
+    auto it = search(l.begin(), l.end(),bookToFind,cmp);
+    if(it != l.end()){
+        cout << " BOOK FOUND";
+    }else{
+        cout<< "NOT FOUND";
     }
+    
+    
+    // if (cmp(b1, bookToFind))
+    // {
+    //     cout << "Same Book";
+    // }
 }
