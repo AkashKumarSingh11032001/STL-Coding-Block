@@ -17,11 +17,7 @@ int main() {
             /* code */
             cin >> arr[i];
         }
-        for (int i = 0; i < n; i++)
-        {
-            /* code */
-            cout <<  arr[i];
-        }
+       
 
         cout << next_permutation(arr,arr+n) <<endl;
 
