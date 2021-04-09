@@ -1,7 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
+int main()
+{
 
     int T;
     cin >> T;
@@ -17,13 +18,11 @@ int main() {
             /* code */
             cin >> arr[i];
         }
-       
-
-        cout << next_permutation(arr,arr+n) <<endl;
-
-
-
-        
+        vector<int> vect(arr, arr + n);
+        next_permutation(vect.begin(), vect.end());
+        for (int i = 0; i < n; i++)
+        {
+            cout << vect[i] << " ";
+        }
     }
-    
 }
