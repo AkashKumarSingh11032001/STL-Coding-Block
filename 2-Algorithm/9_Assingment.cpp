@@ -21,6 +21,8 @@ int main() {
 
         cout << next_permutation(arr,arr+n) <<endl;
 
+
+
         
     }
     
