@@ -79,7 +79,7 @@ int main() {
 
     // FOR EACH LOOP
     for(auto c:s8){
-        cout<< c <<".";
+        cout<< c <<"."
     }
     
 
