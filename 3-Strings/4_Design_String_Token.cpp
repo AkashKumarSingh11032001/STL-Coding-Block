@@ -12,6 +12,10 @@ char *mystrtok(char *s, char delm)
     {
         input = s;
     }
+    // base case
+    if(input == NULL){
+        return NULL;
+    }
 
     // start extracting token and store in new array
     char *output = new char[strlen(input) + 1];
@@ -29,6 +33,11 @@ char *mystrtok(char *s, char delm)
             return output;
         }
     }
+
+    //corner case
+    output[i] = '\0';
+    input = NULL;
+    return output;
 }
 int main()
 {
