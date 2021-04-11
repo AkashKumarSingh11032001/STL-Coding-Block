@@ -1,6 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+bool compare(string a, string b){
+    if(a.length() == b.length()){
+        return a < b;
+    }
+    return a.length() > b.length(); //larger first
+}
 
 int main() {
 
@@ -16,9 +22,16 @@ int main() {
         getline(cin,str[i]);
     }
 
+
+    // sorting
+    sort(str,str + n,compare);
+
+    //printing str
     for (int i = 0; i < n; i++)
     {
         /* code */
         cout << str[i] <<endl;
     }
+
+
 }
