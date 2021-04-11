@@ -54,7 +54,7 @@ int main() {
     int indx = s8.find("apple");
     cout << indx << endl;
 
-    // reove a word
+    // remove a word
     string str = "apple";
     int len = str.length();
     cout << s8 <<endl;
