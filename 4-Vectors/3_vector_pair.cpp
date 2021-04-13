@@ -2,6 +2,8 @@
 using namespace std;
 // V.IMP quetion regarding distance btw two point from orgin 
 //  2 way : using vector pait and by classes
+bool compa
+
 
 int main(){
 
@@ -15,7 +17,7 @@ int main(){
         cin >> x >>y;
         v.push_back(make_pair(x,y));
     }
-    
+    sort(v.begin(),v.end(),compare);
     
 
 
