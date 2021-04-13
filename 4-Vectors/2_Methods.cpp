@@ -77,7 +77,25 @@ int main() {
             // cout << endl;
 
     // use reserve for user input
-    
+    int a;
+    cin >> a;
+    vector<int> vect;
+    // to avoid doubling v.vimp
+    vect.reserve(1000);
+
+    for (int i = 1; i <= a; i++)
+    {
+        /* code */
+        int n;
+        cin>>n;
+        v.push_back(n); // push_back()
+    }
+    for(auto x:vect){
+        cout << x <<" ";
+    }
+    cout << endl;
+
+
 
 
 
