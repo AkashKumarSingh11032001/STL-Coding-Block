@@ -54,8 +54,17 @@ int main()
 
     // OTHER IMP FUNCTION IN VECTOR
 
-    cout << g1.size() <<endl;
-    cout << g1.capacity() <<endl;
-    cout << g1.max_size() <<endl;
+    cout << "Size : " << g1.size();
+    cout << "\nCapacity : " << g1.capacity();
+    cout << "\nMax_Size : " << g1.max_size();
+
+    // resizes the vector size to 4
+    g1.resize(4);
+    cout << "\nSize : " << g1.size();
+
+    if (g1.empty() == false)
+        cout << "\nVector is not empty";
+    else
+        cout << "\nVector is empty";
 
 }
