@@ -50,13 +50,13 @@ int main() {
     // v.clear();
 
     //  REFERENCE OPR
-    cout << "\nReference operator [g] : g1[2] = " << g1[2];
+    cout << "\nReference operator [g] : g1[2] = " << v[2]; //return reference of elemt at positon 4
   
-    cout << "\nat : g1.at(4) = " << g1.at(4);
+    cout << "\nat : g1.at(4) = " << v.at(4); // return elemt at positon 4
   
-    cout << "\nfront() : g1.front() = " << g1.front();
-  
-    cout << "\nback() : g1.back() = " << g1.back();
+    cout << "\nfront() : g1.front() = " << v.front(); // give first elemt
+   
+    cout << "\nback() : g1.back() = " << v.back(); // return last elemt
 
     
 
