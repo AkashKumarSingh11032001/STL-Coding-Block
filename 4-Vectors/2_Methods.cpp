@@ -61,20 +61,23 @@ int main() {
     // RESERVE
 
     // expensive oprtion {don't use this way of user input}
-    int a;
-    cin >> a;
-    vector<int> vect;
-    for (int i = 1; i <= a; i++)
-    {
-        /* code */
-        int n;
-        cin>>n;
-        v.push_back(n); // push_back()
-    }
-    for(auto x:vect){
-        cout << x <<" ";
-    }
-    cout << endl;
+            // int a;
+            // cin >> a;
+            // vector<int> vect;
+            // for (int i = 1; i <= a; i++)
+            // {
+            //     /* code */
+            //     int n;
+            //     cin>>n;
+            //     v.push_back(n); // push_back()
+            // }
+            // for(auto x:vect){
+            //     cout << x <<" ";
+            // }
+            // cout << endl;
+
+    // use reserve for user input
+    
 
 
 
