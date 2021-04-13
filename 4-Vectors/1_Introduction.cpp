@@ -36,13 +36,26 @@ int main()
 
     // USER INPUT
     vector<int> g1;
-    for (int i = 0; i <= 5; i++)
+    for (int i = 1; i <= 5; i++)
     {
         /* code */
         g1.push_back(i);
     }
-    for(int j:g1){
-        cout << j <<",";
+    // 1 2 3 4 5 6
+    for(auto x = g1.begin(); x != g1.end(); x++){
+        cout << *x <<" " ;
     }
     cout << endl;
+    // Reverse order: 6 5 4 3 2 1
+    for(auto x = g1.rbegin(); x != g1.rend(); x++){
+        cout << *x <<" " ;
+    }
+    cout << endl;
+
+    // OTHER IMP FUNCTION IN VECTOR
+
+    cout << g1.size() <<endl;
+    cout << g1.capacity() <<endl;
+    cout << g1.max_size() <<endl;
+
 }
