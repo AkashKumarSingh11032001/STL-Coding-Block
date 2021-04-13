@@ -61,7 +61,8 @@ int main()
     // resizes the vector size to 4
     g1.resize(4);
     cout << "\nSize : " << g1.size();
-
+    
+    // empty()
     if (g1.empty() == false)
         cout << "\nVector is not empty";
     else
