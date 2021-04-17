@@ -29,7 +29,7 @@ int main(){
     l2.pop_back();
     // itrate over list l2
     for(auto x:l2){
-        cout << x <<"-->" ;
+        cout << x <<"," ;
     }
 
     // itrate over list l3
