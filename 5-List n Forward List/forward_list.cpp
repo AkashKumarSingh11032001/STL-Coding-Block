@@ -19,7 +19,22 @@ int main(){
         /* code */
         int x,y,wt;
         cin >> x >>y >>wt;
+        l[x].push_back(make_pair(y,wt));
+        l[y].push_back(make_pair(x,wt));
     }
+
+    // print linked list
+
+    for (int i = 0; i < n; i++)
+    {
+        /* code */
+        for(auto s:l[i]){
+            cout << "(" << s.first <<"," <<s.second <<")";
+
+        }
+        cout <<endl;
+    }
+    
     
 
 
