@@ -12,6 +12,16 @@ int main(){
 
     l = new list<pair<int,int>> [n];
 
+    int e;
+    cin >> e;
+    for (int i = 0; i < e; i++)
+    {
+        /* code */
+        int x,y,wt;
+        cin >> x >>y >>wt;
+    }
+    
+
 
 
 
