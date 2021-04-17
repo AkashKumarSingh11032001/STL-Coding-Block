@@ -13,7 +13,27 @@ int main(){
     // add element 
     l3.push_back("ddc");
 
-    // itrate over list
+    //sort 
+    l2.sort();
+    //reverse
+    l3.reverse();
+
+    //remove elemnt
+    cout << l3.pop_front<<endl;
+    l3.pop_front();
+    cout << l3.pop_front<<endl;
+
+    // add to front 
+    l2.push_front(6);
+    cout << l2.back() <<endl;
+    l2.pop_back();
+
+    // itrate over list l2
+    for(auto x:l2){
+        cout << x <<"-->" ;
+    }
+
+    // itrate over list l3
     for(auto x:l3){
         cout << x <<"-->" ;
     }
