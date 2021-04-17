@@ -19,9 +19,9 @@ int main(){
     l3.reverse();
 
     //remove elemnt
-    cout << l3.pop_front()<<endl;
-    l3.pop_front();
-    cout << l3.pop_front()<<endl;
+    //cout << l3.pop_front()<<endl;
+    // l3.pop_front();
+    // cout << l3.pop_front()<<endl;
 
     // add to front 
     l2.push_front(6);
@@ -29,8 +29,9 @@ int main(){
     l2.pop_back();
     // itrate over list l2
     for(auto x:l2){
-        cout << x <<"," ;
+        cout << x <<"-->" ;
     }
+    cout << endl;
 
     // itrate over list l3
     for(auto x:l3){
