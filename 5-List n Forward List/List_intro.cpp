@@ -15,6 +15,6 @@ int main(){
 
     // itrate over list
     for(auto x:l3){
-        cout << s <<"-->" ;
+        cout << x <<"-->" ;
     }
 }
