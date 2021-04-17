@@ -7,6 +7,14 @@ int main(){
     list<int> l;
 
     //inilizeation
-    list<int> l2{1,2,3,4}
+    list<int> l2{1,2,3,4};
     //diffrent datatype
+    list<string> l3{'a','b','c'};
+    // add element 
+    l2.push_back('d');
+
+    // itrate over list
+    for(auto x:l2){
+        cout << s <<"-->" ;
+    }
 }
