@@ -11,10 +11,10 @@ int main(){
     //diffrent datatype
     list<string> l3{'a','b','c'};
     // add element 
-    l2.push_back('d');
+    l3.push_back('d');
 
     // itrate over list
-    for(auto x:l2){
+    for(auto x:l3){
         cout << s <<"-->" ;
     }
 }
