@@ -56,6 +56,10 @@ public:
         return q1.size() + q2.size();
     }
 
+    bool empty(){
+        return size() == 0;
+    }
+
 };
 int main(){
 
