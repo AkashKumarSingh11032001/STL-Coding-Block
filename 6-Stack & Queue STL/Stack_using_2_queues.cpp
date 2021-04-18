@@ -33,6 +33,22 @@ public:
     }
 
     void top(){
+
+
+        while (q1.size() > 1)
+        {
+            /* code */
+            T element = q1.front();
+            q2.push(element);
+            q1.pop();
+        }
+
+        // 1 ele in q1
+        T element = q1.front();
+        q1.pop();
+        q2.push(element);
+
+        swap(qq1,q2);
         
     }
 
