@@ -13,7 +13,7 @@ int main() {
         q.push(i);
     }
 
-    while (! q.empty())
+    while (!q.empty())
     {
         /* code */
         cout << q.front() << "<--";
