@@ -49,6 +49,8 @@ public:
         q2.push(element);
 
         swap(qq1,q2);
+
+        return element;
         
     }
 
@@ -62,5 +64,20 @@ public:
 
 };
 int main(){
+
+    Stack<int> s;
+    s.push(1);
+    s.push(2);
+    s.push(3);
+
+    while (!s.empty())
+    {
+        /* code */
+        cout << s.top() <<" ";
+        s.pop();
+    }
+
+    return 0;
+    
 
 }
