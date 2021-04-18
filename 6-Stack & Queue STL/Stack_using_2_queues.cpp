@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 // STACK : using 2 queues
+
+
 template<typename T>
 class Stack{
     queue<T> q1,q2;
